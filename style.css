@@ -48,7 +48,13 @@ p {
 
 /*Heading container*/
 .main-heading-container {
-    
+    padding: 4rem 0rem;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+.main-heading-container h1 {
+    margin-top: 7rem;
 }
 /* button */
 
