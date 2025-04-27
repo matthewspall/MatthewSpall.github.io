@@ -97,6 +97,7 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-top: 4rem;
 }
 .footer-nav {
     display: flex;
@@ -247,6 +248,15 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 3rem;
+    padding: 3rem;
+    margin-top: 4rem;
+    margin-top: 4rem;
+}
+.contact img {
+    width: 500px;
+    height: 600x;
+    object-fit: cover;
 }
 .contact-section {
     max-width: 600px;
@@ -303,4 +313,26 @@ p {
     border-radius: 4px;
     font-size: 1rem;
     resize: vertical;
+  }
+
+  /*about me*/
+  .about-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    margin-top: 4rem;
+    margin-top: 4rem;
+  }
+  .about-me img {
+    width: 520px;
+    height: 550px;
+  }
+  .about-me div {
+    width: 520px;
+    height: 550px;
+    align-items: center;
+    justify-content: center;
   }
