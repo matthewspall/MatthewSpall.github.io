@@ -20,7 +20,7 @@
     color: black;
 }
 
-.heading2-font {
+h2 {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 2em;
     font-weight: normal;
@@ -28,7 +28,7 @@
     text-align: center;
 }
 
-.heading3-font {
+h3 {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1.5em;
     font-weight: normal;
@@ -169,11 +169,61 @@ p {
     width: 300px;
     height: 660px;
 }
-.project img {
+.project-image-container {
+    position: relative;
     width: 300px;
     height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 10px;
+    transition: filter 0.3s ease;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* grey transparent background */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    color: white;
+    padding: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-image-container:hover img {
+    filter: brightness(50%);
+}
+
+.project-image-container:hover .overlay {
+    opacity: 1;
+}
+.overlay p {
+    margin: 0;
+    max-width: 90%;
+}
+.project-link {
+    text-decoration: none; /* removes the underline */
+    color: inherit; /* makes it use the text color from the parent (not blue) */
+    display: inline-block; /* helps with layout */
+}
+.project-link:hover,
+.project-link:focus {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Skills */
