@@ -119,31 +119,58 @@ p {
     margin-left: 10rem;
 }
 /* footer */
-.footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+footer {
+    background-color: #f5f5f5;
+    padding: 2rem 1rem;
     margin-top: 4rem;
 }
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 .footer-nav {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
+    gap: 2rem;
     list-style: none;
-    max-width: 500px;
-    margin: 0 auto;
+    padding: 0;
+    margin: 0;
 }
-.footer li {
-    margin: 0 1rem;
-}
-.footer a {
+
+.footer-nav a {
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    border: 2px solid transparent;
-    border-radius: 0;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
+
+.footer-email {
+    color: #555;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.footer-email:hover {
+    color: #007bff;
+}
+
+.footer-copy {
+    font-size: 0.9rem;
+    color: #777;
 }
 
 /*intro elements */
@@ -413,4 +440,53 @@ p {
     height: 550px;
     align-items: center;
     justify-content: center;
+  }
+
+  /*projects */
+  .projects-small-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+  .project-link {
+    text-decoration: none; /* remove underline */
+    color: inherit; /* keep normal text color */
+    display: inline-block; /* let it have width/height */
+  }
+  
+  .project-small {
+    width: 400px;
+    height: 400px;
+    border: 2px solid #ccc; /* light border, you can change the color */
+    border-radius: 10px; /* optional, makes it a little softer */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 0.5rem;
+    background-color: white; /* or whatever background you want */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-small:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-small h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: black;
+    padding-bottom: 0.5rem; /* space between text and line */
+    border-bottom: 2px solid #ccc; /* the line */
+    width: 100%;
+  }
+  
+  .project-small img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
   }
