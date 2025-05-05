@@ -1,23 +1,46 @@
+main > section,
+main > aside {
+    margin: 0;
+    padding: 4rem 1rem; /* consistent spacing inside */
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    background-color: #fff;
+}
+
+
 /*Background Colors*/
 .primary-background {
-    background-color: white;
+    background-color: #ffe1a8;
+    color: #003366; /* high contrast */
 }
 
 .secondary-background {
-    background-color: white;
+    background-color: #f5f5f5; /* light gray */
+    color: #222222;
 }
 
 .white-background {
-    background-color: white;
+    background-color: #ffffff;
+    color: #222222;
 }
 
 /*Fonts*/
 h1 {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
     font-size: 3em;
     font-weight: normal;
     font-style: normal;
-    color: black;
 }
 
 h2 {
@@ -26,6 +49,7 @@ h2 {
     font-weight: normal;
     font-style: normal;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 h3 {
@@ -56,7 +80,6 @@ p {
 .main-heading-container {
     padding: 4rem 0rem;
     text-align: center;
-    background-color: #f5f5f5;
     border-bottom: 1px solid #ddd;
 }
 .main-heading-container h1 {
@@ -64,7 +87,7 @@ p {
 }
 /* button */
 .button {
-    background-color: #007BFF; /* primary blue color */
+    background-color: #723d46;
     color: white;
     padding: 0.75rem 1.5rem;
     width: 170px;
@@ -79,7 +102,7 @@ p {
 
 .button:hover,
 .button:focus {
-    background-color: #0056b3; /* darker blue when hovered */
+    background-color: #4f2a30; /* darker blue when hovered */
     transform: scale(1.05); /* slightly grow on hover for a nice effect */
 }
 
@@ -107,7 +130,7 @@ p {
     border-radius: 0;
 }
 .navbar a:hover {
-    background-color: #0077cc;   
+    background-color: #723d46;   
     color: white;
     border: 2px solid #00192c;
     border-radius: 999px;                
@@ -118,6 +141,7 @@ p {
 .navbar li:not(:first-child) {
     margin-left: 10rem;
 }
+
 /* footer */
 footer {
     background-color: #f5f5f5;
@@ -281,6 +305,7 @@ footer {
 }
 
 /* Skills */
+
 .skills {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -434,6 +459,7 @@ footer {
   .about-me img {
     width: 520px;
     height: 550px;
+    object-fit: cover;
   }
   .about-me div {
     width: 520px;

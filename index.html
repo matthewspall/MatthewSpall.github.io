@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matthew Spall</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,21 +15,24 @@
     </header>
 
     <main>
-        <section class="intro" class="primary-background">
+        <section class="intro primary-background">
             <div class="profile-info">
                 <p class="paragraph-font">Hello Everyone! I am</p>
                 <h1 class="heading1-font">Matthew Spall</h1>
                 <p></p>
                 <div class="buttons-intro">
-                    <button type="button" onclick="downloadResume" class="button">Get Resume</button>
-                    <button type="button" onclick="downloadCoverletter" class="button">Get Cover Letter</button>
+                    <a href="resume.docx">
+                        <button type="button" onclick="downloadResume()" class="button">Get Resume</button>
+                    </a>
+                    <a href="coverLetter.docx">
+                        <button type="button" onclick="downloadCoverletter()" class="button">Get Cover Letter</button>
+                    </a>
                 </div>
             </div>
             <img src="images\20250205_BSU Career Fair.jpg" alt="Headshot of Matthew" class="headshot">
         </section>
 
-        <aside class="secondary-background">
-            <hr>
+        <aside class="white-background">
             <h2  class="heading2-font">My Skills</h2>
             <ul class="skills">
                 <li>
@@ -53,10 +57,9 @@
                     <p>Information Architecture</p>
                 </li>
             </ul>
-            <hr>
         </aside>
 
-        <section id="featured-projects" class="white-background">
+        <section id="featured-projects" class="secondary-background">
             <h2 class="heading2-font">Featured Projects</h2>
             <div class="projects-container">
                 <a href="HighwayDistrictsRecommendationReport.pdf" target="_blank" class="project-link">
@@ -71,12 +74,12 @@
                         <h3>Highway Districts Recommendation Report</h3>
                     </article>
                 </a>
-                <a href="" target="_blank" class="project-link">
+                <a href="WhitePaperRedesign.docx" target="_blank" class="project-link">
                     <article class="project">
                         <div class="project-image-container">
-                            <img src="" alt="">
+                            <img src="images\Screenshot 2025-05-04 212915.png" alt="">
                             <div class="overlay">
-                                <p></p>
+                                <p>This document is an example of my ability to both interpret technical documents and provide my expertise on making meaningful changes in a well organized, clear and concise document. The organization I was responding to with this document is ATG Access, a United Kingdom based company that manufactures bollards. The document's purpose is to provide design recommendations for a white paper discussing safety in urban design, specifically with street furniture. The document was created as a part of course work at Boise State with the goal of writing professionally in many different genres and was created on April 17, 2023.</p>
                             </div>
                         </div>
                         <h3>White Paper Design Recommendation</h3>
@@ -85,24 +88,21 @@
 
                 <article class="project">
                     <div class="project-image-container">
-                        <img src="" alt="">
+                        <img src="images\Screenshot 2025-05-04 214213.png" alt="">
                         <div class="overlay">
-                            <p></p>
+                            <p>This article demonstrates my ability to combine journalistic storytelling with accurate reporting. Through interviews, research, and analysis, I highlight the challenges faced by public school librarians in Idaho, particularly in the face of political pressures and censorship efforts. The piece reflects my strengths in interviewing, narrative structure, and issue framing, as well as my commitment to amplifying underrepresented voices and defending access to information in public education.</p>
                         </div>
                     </div>
-                    <h3>title 3</h3>
-                    <a href="" target="_blank"></a>
+                    <h3>Feature Article</h3>
+                    <a href="FeatureArticle.docx" target="_blank"></a>
                 </article>
             </div>
         </section>
 
-        <section class="secondary-background landing-page-container">
-            <img src="images\Screenshot 2025-04-19 225226.png" alt="Picture of Matthew" class="matthew-photo">
+        <section class="white-background landing-page-container">
+            <img src="images\PXL_20221121_213858177.jpg" alt="Picture of Matthew" class="matthew-photo">
             <div class="landing-page-paragraph-container">
-                <div class="landing-page-closing-paragraph">
-                    <strong class="paragraph-font">some nice soundin words</strong>
-                    <p>maybe another sentence</p>
-                </div>
+
                 <a href="About.html">
                     <button class="button">About me</button>
                 </a>
